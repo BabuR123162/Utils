@@ -10,10 +10,10 @@ public enum AnnexePaymentKeysPBinder implements KJUSYSPropertyBinder {
     ACCOMMODATION_CHARGES("accommodationCharges_KJAnnexePayment_Double", "Accommodation Charges", Double.class),
     PAYMENT_METHOD("paymentMethod_KJAnnexePayment_Text", "Payment Method", String.class),
     DISCOUNT_AMOUNT("discountAmount_KJAnnexePayment_Double", "Discount Amount", Double.class),
-    TOTAL_DUE_AMOUNT("totalDueAmount_KJAnnexePayment_Double", "Total Due Amount", Double.class),
-    PAYMENT_STATUS("paymentStatus_KJAnnexePayment_Text", "Payment Status", String.class),
+//  PAYMENT_STATUS("paymentStatus_KJAnnexePayment_Text", "Payment Status", String.class),
     AMOUNT_PAID("amountPaid_KJAnnexePayment_Double", "Amount Paid", Double.class),
-    PAYMENT_DATE("paymentDate_KJAnnexePayment_DateTime", "Payment Date", Long.class);
+    PAYMENT_DATE("paymentDate_KJAnnexePayment_DateTime", "Payment Date", Long.class),
+    TOTAL_DUE_AMOUNT("totalDueAmount_KJAnnexePayment_Double", "Total Due Amount", Double.class);
 
     private final String property;
     private final String label;
