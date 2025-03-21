@@ -6,15 +6,15 @@ import org.bson.Document;
 public enum AnnexePaymentPBinder implements KJUSYSPropertyBinder {
 
     PAYMENT_ID("paymentId_KJAnnexePayment_Text", "Payment ID", String.class),
-    BOOKING_ID("bookingId_KJAnnexePayment_Long", "Booking ID", Long.class),
+    BOOKING_ID("bookingId_KJAnnexePayment_Text", "Booking ID", String.class),
     BILL_REF_NUMBER("billRefNumber_KJAnnexePayment_Text", "Bill Reference Number", String.class),
     ACCOMMODATION_CHARGES("accommodationCharges_KJAnnexePayment_Double", "Accommodation Charges", Double.class),
-    PAYMENT_METHOD("paymentMethod_KJAnnexePayment_DocumentArray", "Payment Method", Document.class),
+    PAYMENT_METHOD("paymentMethod_KJAnnexePayment_Text", "Payment Method", String.class),
     DISCOUNT_AMOUNT("discountAmount_KJAnnexePayment_Double", "Discount Amount", Double.class),
     TOTAL_DUE_AMOUNT("totalDueAmount_KJAnnexePayment_Double", "Total Due Amount", Double.class),
     PAYMENT_STATUS("paymentStatus_KJAnnexePayment_Text", "Payment Status", String.class),
     AMOUNT_PAID("amountPaid_KJAnnexePayment_Double", "Amount Paid", Double.class),
-    PAYMENT_DATE("paymentDate_KJAnnexePayment_Long", "Payment Date", Long.class);
+    PAYMENT_DATE("paymentDate_KJAnnexePayment_DateTime", "Payment Date", Long.class);
 
     private final String property;
     private final String label;
