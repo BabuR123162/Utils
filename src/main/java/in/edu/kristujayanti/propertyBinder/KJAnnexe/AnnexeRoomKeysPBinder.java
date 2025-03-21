@@ -6,17 +6,17 @@ import in.edu.kristujayanti.propertyBinder.Library.LibraryCommonKeysPBinder;
 
 
 public enum AnnexeRoomKeysPBinder implements KJUSYSPropertyBinder {
-    KJANNEXE_ROOM_ID("roomId_KJAnnexRoom_Int", "KJAnnexe Room ID", Integer.class),
-    KJANNEXE_ROOM_NUMBER("roomNumber_KJAnnexRoom_Text", "KJAnnexe Room Number", String.class),
-    KJANNEXE_COST_PER_BED("costPerBed_KJAnnexRoom_Double", "KJAnnexe Cost Per Bed", Double.class),
-    KJANNEXE_COST_PER_ROOM("costPerRoom_KJAnnexRoom_Double", "KJAnnexe Cost Per Room", Double.class),
-    KJANNEXE_CREATED_AT("createdAt_KJAnnexRoom_Long", "KJAnnexe Created At", Long.class),
-    KJANNEXE_UPDATED_AT("updatedAt_KJAnnexRoom_Long", "KJAnnexe Updated At", Long.class),
-    KJANNEXE_ROOM_TYPE("roomType_KJAnnexRoom_Text", "KJAnnexe Room Type", String.class),
-    KJANNEXE_MAX_PEOPLE("maxPeople_KJAnnexRoom_Int", "KJAnnexe Max People", Integer.class),
-    KJANNEXE_PHOTO_URL("photoUrl_KJAnnexRoom_Text", "KJAnnexe Photo URL", String.class),
-    KJANNEXE_STATUS("status_KJAnnexRoom_String", "KJAnnexe Status", String.class),
-    KJANNEXE_NUMBER_OF_BEDS("numberOfBeds_KJAnnexRoom_Int", "KJAnnexe Number of Beds", Integer.class);
+    ROOM_ID("roomId_KJAnnexeRoom_Int", "Room ID", Integer.class),
+    ROOM_NUMBER("roomNumber_KJAnnexeRoom_Text", "Room Number", String.class),
+    COST_PER_BED("costPerBed_KJAnnexeRoom_Double", "Cost Per Bed", Double.class),
+    COST_PER_ROOM("costPerRoom_KJAnnexeRoom_Double", "Cost Per Room", Double.class),
+    CREATED_AT("createdAt_KJAnnexeRoom_DateTime", "Created At", Long.class),
+    UPDATED_AT("updatedAt_KJAnnexeRoom_DateTime", "Updated At", Long.class),
+    ROOM_TYPE("roomType_KJAnnexeRoom_Text", "Room Type", String.class),
+    MAX_PEOPLE("maxPeople_KJAnnexeRoom_Int", "Max People", Integer.class),
+    PHOTO_URL("photoUrl_KJAnnexeRoom_Text", "Photo URL", String.class),
+    ACTIVE_STATUS("activeStatus_KJAnnexeRoom_Bool", "Status", Boolean.class),
+    NUMBER_OF_BEDS("numberOfBeds_KJAnnexeRoom_Int", "Number of Beds", Integer.class);
 
 
     private final String property;
