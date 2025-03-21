@@ -1,9 +1,8 @@
 package in.edu.kristujayanti.propertyBinder.KJAnnexe;
 
 import in.edu.kristujayanti.propertyBinder.KJUSYSPropertyBinder;
-import org.bson.Document;
 
-public enum AnnexePaymentPBinder implements KJUSYSPropertyBinder {
+public enum AnnexePaymentKeysPBinder implements KJUSYSPropertyBinder {
 
     PAYMENT_ID("paymentId_KJAnnexePayment_Text", "Payment ID", String.class),
     BOOKING_ID("bookingId_KJAnnexePayment_Text", "Booking ID", String.class),
@@ -11,10 +10,10 @@ public enum AnnexePaymentPBinder implements KJUSYSPropertyBinder {
     ACCOMMODATION_CHARGES("accommodationCharges_KJAnnexePayment_Double", "Accommodation Charges", Double.class),
     PAYMENT_METHOD("paymentMethod_KJAnnexePayment_Text", "Payment Method", String.class),
     DISCOUNT_AMOUNT("discountAmount_KJAnnexePayment_Double", "Discount Amount", Double.class),
-    TOTAL_DUE_AMOUNT("totalDueAmount_KJAnnexePayment_Double", "Total Due Amount", Double.class),
-    PAYMENT_STATUS("paymentStatus_KJAnnexePayment_Text", "Payment Status", String.class),
+//  PAYMENT_STATUS("paymentStatus_KJAnnexePayment_Text", "Payment Status", String.class),
     AMOUNT_PAID("amountPaid_KJAnnexePayment_Double", "Amount Paid", Double.class),
-    PAYMENT_DATE("paymentDate_KJAnnexePayment_DateTime", "Payment Date", Long.class);
+    PAYMENT_DATE("paymentDate_KJAnnexePayment_DateTime", "Payment Date", Long.class),
+    TOTAL_DUE_AMOUNT("totalDueAmount_KJAnnexePayment_Double", "Total Due Amount", Double.class);
 
     private final String property;
     private final String label;
@@ -22,7 +21,7 @@ public enum AnnexePaymentPBinder implements KJUSYSPropertyBinder {
     private final int minLength;
     private final int maxLength;
 
-    private AnnexePaymentPBinder(String property, String label, Class<?> dataType, int minLength, int maxLength) {
+    private AnnexePaymentKeysPBinder(String property, String label, Class<?> dataType, int minLength, int maxLength) {
         this.property = property;
         this.label = label;
         this.dataType = dataType;
@@ -30,7 +29,7 @@ public enum AnnexePaymentPBinder implements KJUSYSPropertyBinder {
         this.maxLength = maxLength;
     }
 
-    private AnnexePaymentPBinder(String property, String label, Class<?> dataType) {
+    private AnnexePaymentKeysPBinder(String property, String label, Class<?> dataType) {
         this(property, label, dataType, -1, -1);
     }
 
@@ -54,7 +53,7 @@ public enum AnnexePaymentPBinder implements KJUSYSPropertyBinder {
         return this.maxLength;
     }
 
-    private static AnnexePaymentPBinder[] $values() {
-        return AnnexePaymentPBinder.class.getEnumConstants();
+    private static AnnexePaymentKeysPBinder[] $values() {
+        return AnnexePaymentKeysPBinder.class.getEnumConstants();
     }
 }
