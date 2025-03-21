@@ -5,9 +5,9 @@ import in.edu.kristujayanti.propertyBinder.Eform.Applicant.ApplicantProgrammeKey
 import in.edu.kristujayanti.propertyBinder.Eform.EformCommonKeysPBinder;
 import in.edu.kristujayanti.propertyBinder.FeeModule.FeeModuleKeysPBinder;
 import in.edu.kristujayanti.propertyBinder.HR.*;
-import in.edu.kristujayanti.propertyBinder.KJAnnexe.AnnexePaymentPBinder;
+import in.edu.kristujayanti.propertyBinder.KJAnnexe.AnnexePaymentKeysPBinder;
 import in.edu.kristujayanti.propertyBinder.KJAnnexe.AnnexeRoomKeysPBinder;
-import in.edu.kristujayanti.propertyBinder.KJAnnexe.AnnexeBookingPBinder;
+import in.edu.kristujayanti.propertyBinder.KJAnnexe.AnnexeBookingKeysPBinder;
 
 import in.edu.kristujayanti.propertyBinder.Library.LibraryBookKeysPBInder;
 import in.edu.kristujayanti.propertyBinder.Library.LibraryCheckInAndOutKeysPBinder;
@@ -128,9 +128,9 @@ public class PropertyBinderUtils {
 
                 InterviewKeysPBinder.class,
                 VenueUpdateKeysPBInder.class,
-                AnnexeBookingPBinder.class,
+                AnnexeBookingKeysPBinder.class,
                 AnnexeRoomKeysPBinder.class,
-                AnnexePaymentPBinder.class
+                AnnexePaymentKeysPBinder.class
 
         );
     }

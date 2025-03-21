@@ -5,9 +5,9 @@ import in.edu.kristujayanti.propertyBinder.Eform.Applicant.ApplicantFormsKeysPBi
 import in.edu.kristujayanti.propertyBinder.Eform.EformCommonKeysPBinder;
 import in.edu.kristujayanti.propertyBinder.FeeModule.FeeModuleKeysPBinder;
 import in.edu.kristujayanti.propertyBinder.HR.*;
-import in.edu.kristujayanti.propertyBinder.KJAnnexe.AnnexePaymentPBinder;
+import in.edu.kristujayanti.propertyBinder.KJAnnexe.AnnexePaymentKeysPBinder;
 import in.edu.kristujayanti.propertyBinder.KJAnnexe.AnnexeRoomKeysPBinder;
-import in.edu.kristujayanti.propertyBinder.KJAnnexe.AnnexeBookingPBinder;
+import in.edu.kristujayanti.propertyBinder.KJAnnexe.AnnexeBookingKeysPBinder;
 import in.edu.kristujayanti.propertyBinder.Library.LibraryBookKeysPBInder;
 import in.edu.kristujayanti.propertyBinder.Library.LibraryCheckInAndOutKeysPBinder;
 import in.edu.kristujayanti.propertyBinder.Library.LibraryCommonKeysPBinder;
@@ -79,9 +79,9 @@ public final class PropertyEnumRegistry {
         KJUSYS_ENUM_REGISTRY.put("LeaveApplications", LeaveApplicationsKeysPBinder.class);
         KJUSYS_ENUM_REGISTRY.put("AwardsDataKeys", AwardsDataKeyPBinders.class);
         KJUSYS_ENUM_REGISTRY.put("UpdateVenue", VenueUpdateKeysPBInder.class);
-        KJUSYS_ENUM_REGISTRY.put("KJAnnexeBooking", AnnexeBookingPBinder.class);
+        KJUSYS_ENUM_REGISTRY.put("KJAnnexeBooking", AnnexeBookingKeysPBinder.class);
         KJUSYS_ENUM_REGISTRY.put("KJAnnexeRoom", AnnexeRoomKeysPBinder.class);
-        KJUSYS_ENUM_REGISTRY.put("KJAnnexePayment", AnnexePaymentPBinder.class);
+        KJUSYS_ENUM_REGISTRY.put("KJAnnexePayment", AnnexePaymentKeysPBinder.class);
 
 
 
