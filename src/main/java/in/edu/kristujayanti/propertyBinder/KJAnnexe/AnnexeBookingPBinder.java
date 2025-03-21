@@ -16,6 +16,7 @@ public enum AnnexeBookingPBinder implements KJUSYSPropertyBinder {
     CHECK_IN_DATE("checkInDate_KJAnnexeBooking_Date", "Check-in Date", Long.class),
     CHECK_OUT_DATE("checkOutDate_KJAnnexeBooking_Date", "Check-out Date", Long.class),
     COLLEGE_GUEST("collegeGuest_KJAnnexeBooking_Bool", "College Guest", Boolean.class),
+    GUEST_NAME("guestName_KJAnnexeBooking_Text", "Guest Name", String.class),
 
     SELECTED_ROOM("selectedRoom_KJAnnexeBooking_DocumentArray", "Selected Room Details", Document.class),
 
