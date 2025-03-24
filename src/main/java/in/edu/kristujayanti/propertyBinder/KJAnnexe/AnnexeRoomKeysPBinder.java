@@ -2,7 +2,6 @@ package in.edu.kristujayanti.propertyBinder.KJAnnexe;
 
 
 import in.edu.kristujayanti.propertyBinder.KJUSYSPropertyBinder;
-import in.edu.kristujayanti.propertyBinder.Library.LibraryCommonKeysPBinder;
 import org.bson.types.ObjectId;
 
 import javax.swing.text.Document;
@@ -63,7 +62,7 @@ public enum AnnexeRoomKeysPBinder implements KJUSYSPropertyBinder {
         return this.label;
     }
 
-    public Class getDataType() {
+    public Class<?> getDataType() {
         return this.dataType;
     }
 
@@ -75,7 +74,5 @@ public enum AnnexeRoomKeysPBinder implements KJUSYSPropertyBinder {
         return this.maxLength;
     }
 
-    private static LibraryCommonKeysPBinder[] $values() {
-        return (LibraryCommonKeysPBinder[])LibraryCommonKeysPBinder.class.getEnumConstants();
-    }
+    private static AnnexeRoomKeysPBinder[] $values() { return AnnexeRoomKeysPBinder.class.getEnumConstants(); }
 }
