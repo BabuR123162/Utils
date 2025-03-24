@@ -5,7 +5,7 @@ import in.edu.kristujayanti.propertyBinder.KJUSYSPropertyBinder;
 public enum AnnexePaymentKeysPBinder implements KJUSYSPropertyBinder {
 
     PAYMENT_ID("paymentId_KJAnnexePayment_Text", "Payment ID", String.class),
-    BOOKING_ID("bookingId_KJAnnexePayment_Text", "Booking ID", String.class),
+    BOOKING_ID("bookingId_KJAnnexeBooking_Text", "Booking ID", String.class),
     BILL_REF_NUMBER("billRefNumber_KJAnnexePayment_Text", "Bill Reference Number", String.class),
     ACCOMMODATION_CHARGES("accommodationCharges_KJAnnexePayment_Double", "Accommodation Charges", Double.class),
     PAYMENT_METHOD("paymentMethod_KJAnnexePayment_Text", "Payment Method", String.class),

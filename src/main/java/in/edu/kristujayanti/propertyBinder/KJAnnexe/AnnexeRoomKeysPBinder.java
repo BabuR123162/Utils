@@ -3,6 +3,7 @@ package in.edu.kristujayanti.propertyBinder.KJAnnexe;
 
 import in.edu.kristujayanti.propertyBinder.KJUSYSPropertyBinder;
 import in.edu.kristujayanti.propertyBinder.Library.LibraryCommonKeysPBinder;
+import org.bson.types.ObjectId;
 
 import javax.swing.text.Document;
 
@@ -19,7 +20,8 @@ public enum AnnexeRoomKeysPBinder implements KJUSYSPropertyBinder {
     PHOTO_URL("photoUrl_KJAnnexeRoom_Text", "Photo URL", String.class),
 
     BED_INFO("bedInfo_KJAnnexeRoom_DocumentArray","Bed Information", Document.class),
-    BED_ID("bedID_KJAnnexeRoom_Int","Bed ID",Integer.class),
+    BED_ID("bedId_KJAnnexeRoom_ObjectId","Bed ID", ObjectId.class),
+    BED_NO("bedNo_KJAnnexeRoom_Int","Bed No.",Integer.class),
     ACTIVE_BED_STATUS("activeBedStatus_KJAnnexeRoom_Bool", "Active Bed Status", Boolean.class),
 
     ROOM_AVAILABILITY_STATUS("roomAvailabilityStatus_KJAnnexeRoom_Bool","Active Room Status",Boolean.class),
@@ -27,7 +29,7 @@ public enum AnnexeRoomKeysPBinder implements KJUSYSPropertyBinder {
 
     AMENITIES_INFO("amenitiesInfo_KJAnnexeRoom_DocumentArray","Amenities Information", Document.class),
     IS_WIFI_ACTIVE("isWifiActive_KJAnnexeRoom_Bool","Is Wifi Active",Boolean.class),
-    IS_BALCONEY_ACTIVE("isBalconeyActive_KJAnnexeRoom_Bool","Is Balconey Active",Boolean.class),
+    IS_BALCONY_ACTIVE("isBalconyActive_KJAnnexeRoom_Bool","Is Balconey Active",Boolean.class),
     IS_TV_ACTIVE("isTvActive_KJAnnexeRoom_Bool","Is TV Active",Boolean.class);
 
 

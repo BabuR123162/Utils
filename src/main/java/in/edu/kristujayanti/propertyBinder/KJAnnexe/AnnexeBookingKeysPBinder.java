@@ -9,6 +9,7 @@ public enum AnnexeBookingKeysPBinder implements KJUSYSPropertyBinder {
     BOOKING_ID("bookingId_KJAnnexeBooking_Text", "Booking ID", String.class),
     //Guest Details
     GUEST_INFO("guestInfo_KJAnnexeBooking_DocumentArray", "Guest Information", Document.class),
+    BED_NO ("bedNumber_KJAnnexeRoom_Int","Bed NO.",ObjectId.class), //if booked by bed only
     GUEST_NAME("guestName_KJAnnexeBooking_Text", "Guest Name", String.class),
     GUEST_GENDER("guestGender_KJAnnexeBooking_Text","Guest Gender",String.class),
     GUEST_AADHAAR_NO("guestAadhaar_KJAnnexeBooking_Text","Guest Aadhaar No",String.class),
@@ -16,8 +17,6 @@ public enum AnnexeBookingKeysPBinder implements KJUSYSPropertyBinder {
     GUEST_DESIGNATION("guestDesignation_KJAnnexeBooking_Text","Guest Designation",String.class),
     GUEST_ADDRESS("guestAddress_KJAnnexeBooking_Text","Guest Address",String.class),
     GUEST_EMAIL_ID("guestEmailId_KJAnnexeBooking_Text","Guest Email", String.class),
-//  GUEST_NAME("guestName_KJAnnexeBooking_Text", "Guest Name", String.class),
-//  GUEST_GENDER("guestGender_KJAnnexeBooking_Text","Guest Gender",String.class),
 
     PURPOSE_OF_VISIT("purposeOfVisit_KJAnnexeBooking_Text", "Purpose of Visit", String.class),
     EVENT_DEPARTMENT("eventDepartment_KJAnnexeBooking_Text","Event Host by Department",String.class),
@@ -33,7 +32,7 @@ public enum AnnexeBookingKeysPBinder implements KJUSYSPropertyBinder {
     SELECTED_ROOM("selectedRoom_KJAnnexeBooking_DocumentArray", "Selected Room Details", Document.class),
     SELECTED_ROOM_NO("selectedRoomNo_KJAnnexeBooking_ObjectID", "Selected Room Number", ObjectId.class),
     SELECTED_ROOM_TYPE("selectedRoomType_KJAnnexeBooking_Text", "Selected Room Type", String.class),
-    SELECTED_BED_NO("selectedBedNo_KJAnnexeBooking_Int","Numbers of Room Selected",Integer.class),
+    SELECTED_BED_NO("selectedBedNo_KJAnnexeBooking_Int","Numbers of Bed Selected",Integer.class),
 
     BOOKING_STATUS("bookingStatus_KJAnnexeBooking_Text", "Booking Status", String.class),
     PAYMENT_STATUS("paymentStatus_KJAnnexeBooking_Bool", "Payment Status", Boolean.class),
