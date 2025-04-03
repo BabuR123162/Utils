@@ -12,7 +12,7 @@ public enum AnnexePaymentKeysPBinder implements KJUSYSPropertyBinder {
     DISCOUNT_AMOUNT("discountAmount_KJAnnexePayment_Double", "Discount Amount", Double.class),
 //  PAYMENT_STATUS("paymentStatus_KJAnnexePayment_Text", "Payment Status", String.class),
     AMOUNT_PAID("amountPaid_KJAnnexePayment_Double", "Amount Paid", Double.class),
-    PAYMENT_DATE("paymentDate_KJAnnexePayment_DateTime", "Payment Date", Long.class),
+    PAYMENT_DATE("paymentDate_KJAnnexePayment_Long", "Payment Date", Long.class),
     TOTAL_DUE_AMOUNT("totalDueAmount_KJAnnexePayment_Double", "Total Due Amount", Double.class);
 
     private final String property;
