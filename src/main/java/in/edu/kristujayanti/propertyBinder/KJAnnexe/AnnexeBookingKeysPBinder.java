@@ -7,6 +7,8 @@ import org.bson.types.ObjectId;
 public enum AnnexeBookingKeysPBinder implements KJUSYSPropertyBinder {
 
     BOOKING_ID("bookingId_KJAnnexeBooking_Text", "Booking ID", String.class),
+    OBJECT_ID("_id", "MongoDB ObjectID", ObjectId.class),
+    BOOKING_TYPE("bookingType_KJAnnexeBooking_Text", "Booking Type", String.class),
     //Guest Details
     GUEST_INFO("guestInfo_KJAnnexeBooking_DocumentArray", "Guest Information", Document.class),
     BED_NO ("bedNumber_KJAnnexeRoom_Int","Bed NO.",ObjectId.class), //if booked by bed only
