@@ -2,7 +2,6 @@ package in.edu.kristujayanti.propertyBinder.KJAnnexe;
 
 import in.edu.kristujayanti.propertyBinder.KJUSYSPropertyBinder;
 import java.util.List;
-import org.bson.Document;
 
 public enum AnnexeRoomKeysPBinder implements KJUSYSPropertyBinder {
 
