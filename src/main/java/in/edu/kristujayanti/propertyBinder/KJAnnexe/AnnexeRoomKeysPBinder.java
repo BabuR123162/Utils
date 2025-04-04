@@ -1,8 +1,8 @@
 package in.edu.kristujayanti.propertyBinder.KJAnnexe;
 
 import in.edu.kristujayanti.propertyBinder.KJUSYSPropertyBinder;
-import java.util.List;  // Using List instead of JsonArray for cleaner MongoDB integration
-import org.bson.Document;  // Using correct MongoDB Document class
+import java.util.List;
+import org.bson.Document;
 
 public enum AnnexeRoomKeysPBinder implements KJUSYSPropertyBinder {
 
@@ -20,11 +20,9 @@ public enum AnnexeRoomKeysPBinder implements KJUSYSPropertyBinder {
     ACTIVE_BED_STATUS("activeBedStatus_KJAnnexeRoom_Bool", "Active Bed Status", Boolean.class),
     IS_ACTIVE("isActive_KJAnnexeRoom_Bool", "Room Active Status", Boolean.class),
     ROOM_AVAILABILITY_STATUS("roomAvailabilityStatus_KJAnnexeRoom_Bool", "Active Room Status", Boolean.class),
-
     NUMBER_OF_BEDS("numberOfBeds_KJAnnexeRoom_Int", "Number of Beds", Integer.class),
-
     AMENITIES_INFO("amenitiesInfo_KJAnnexeRoom_DocumentArray", "Amenities Information", List.class),
-    AMENITIES_LIST("amenitiesList_KJAnnexeRoom_TextArray", "List of Amenities", List.class), // Changed to TextArray type
+    AMENITIES_LIST("amenitiesList_KJAnnexeRoom_TextArray", "List of Amenities", String.class), // Changed to String.class with _TextArray
     AMENITY_NAME("amenityName_KJAnnexeRoom_Text", "Amenity Name", String.class),
     AMENITY_STATUS("amenityStatus_KJAnnexeRoom_Bool", "Amenity Status", Boolean.class);
 
