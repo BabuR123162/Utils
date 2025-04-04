@@ -32,7 +32,7 @@ public enum AnnexeBookingKeysPBinder implements KJUSYSPropertyBinder {
     COLLEGE_GUEST("collegeGuest_KJAnnexeBooking_Bool", "College Guest", Boolean.class),
     //Room Details
     SELECTED_ROOM("selectedRoom_KJAnnexeBooking_DocumentArray", "Selected Room Details", Document.class),
-    SELECTED_ROOM_NO("selectedRoomNo_KJAnnexeBooking_ObjectID", "Selected Room Number", ObjectId.class),
+    SELECTED_ROOM_NO("selectedRoomNo_KJAnnexeBooking_Int", "Selected Room Number", Integer.class),
     SELECTED_ROOM_TYPE("selectedRoomType_KJAnnexeBooking_Text", "Selected Room Type", String.class),
     SELECTED_BED_NO("selectedBedNo_KJAnnexeBooking_Int","Numbers of Bed Selected",Integer.class),
 
