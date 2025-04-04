@@ -1,9 +1,8 @@
 package in.edu.kristujayanti.propertyBinder.KJAnnexe;
 
 import in.edu.kristujayanti.propertyBinder.KJUSYSPropertyBinder;
-import io.vertx.core.json.JsonArray; // Add this import
-import org.bson.types.ObjectId;
-import javax.swing.text.Document;
+import java.util.List;  // Using List instead of JsonArray for cleaner MongoDB integration
+import org.bson.Document;  // Using correct MongoDB Document class
 
 public enum AnnexeRoomKeysPBinder implements KJUSYSPropertyBinder {
 
@@ -16,7 +15,7 @@ public enum AnnexeRoomKeysPBinder implements KJUSYSPropertyBinder {
     MAX_PEOPLE("maxPeople_KJAnnexeRoom_Int", "Max People", Integer.class),
     PHOTO_URL("photoUrl_KJAnnexeRoom_Text", "Photo URL", String.class),
     AIR_CONDITIONING("airConditioning_KJAnnexeRoom_Bool", "Air Conditioning", Boolean.class),
-    BED_INFO("bedInfo_KJAnnexeRoom_DocumentArray", "Bed Information", Document.class),
+    BED_INFO("bedInfo_KJAnnexeRoom_DocumentArray", "Bed Information", List.class),
     BED_NO("bedNo_KJAnnexeRoom_Int", "Bed No.", Integer.class),
     ACTIVE_BED_STATUS("activeBedStatus_KJAnnexeRoom_Bool", "Active Bed Status", Boolean.class),
     IS_ACTIVE("isActive_KJAnnexeRoom_Bool", "Room Active Status", Boolean.class),
@@ -24,8 +23,8 @@ public enum AnnexeRoomKeysPBinder implements KJUSYSPropertyBinder {
 
     NUMBER_OF_BEDS("numberOfBeds_KJAnnexeRoom_Int", "Number of Beds", Integer.class),
 
-    AMENITIES_INFO("amenitiesInfo_KJAnnexeRoom_DocumentArray", "Amenities Information", Document.class),
-    AMENITIES_LIST("amenitiesList_KJAnnexeRoom_StringArray", "List of Amenities", JsonArray.class), // Changed to JsonArray.class
+    AMENITIES_INFO("amenitiesInfo_KJAnnexeRoom_DocumentArray", "Amenities Information", List.class),
+    AMENITIES_LIST("amenitiesList_KJAnnexeRoom_TextArray", "List of Amenities", List.class), // Changed to TextArray type
     AMENITY_NAME("amenityName_KJAnnexeRoom_Text", "Amenity Name", String.class),
     AMENITY_STATUS("amenityStatus_KJAnnexeRoom_Bool", "Amenity Status", Boolean.class);
 
@@ -71,5 +70,7 @@ public enum AnnexeRoomKeysPBinder implements KJUSYSPropertyBinder {
         return this.maxLength;
     }
 
-    private static AnnexeRoomKeysPBinder[] $values() { return AnnexeRoomKeysPBinder.class.getEnumConstants(); }
+    private static AnnexeRoomKeysPBinder[] $values() {
+        return AnnexeRoomKeysPBinder.class.getEnumConstants();
+    }
 }
