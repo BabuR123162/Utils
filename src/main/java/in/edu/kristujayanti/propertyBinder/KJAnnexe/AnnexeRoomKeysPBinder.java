@@ -1,9 +1,8 @@
 package in.edu.kristujayanti.propertyBinder.KJAnnexe;
 
 import in.edu.kristujayanti.propertyBinder.KJUSYSPropertyBinder;
-import org.bson.types.ObjectId;
-
-import javax.swing.text.Document;
+import java.util.List;
+import org.bson.Document;
 
 public enum AnnexeRoomKeysPBinder implements KJUSYSPropertyBinder {
 
@@ -15,22 +14,17 @@ public enum AnnexeRoomKeysPBinder implements KJUSYSPropertyBinder {
     ROOM_TYPE("roomType_KJAnnexeRoom_Text", "Room Type", String.class),
     MAX_PEOPLE("maxPeople_KJAnnexeRoom_Int", "Max People", Integer.class),
     PHOTO_URL("photoUrl_KJAnnexeRoom_Text", "Photo URL", String.class),
-
-    BED_INFO("bedInfo_KJAnnexeRoom_DocumentArray","Bed Information", Document.class),
-    BED_ID("bedId_KJAnnexeRoom_ObjectId","Bed ID", ObjectId.class),
-    BED_NO("bedNo_KJAnnexeRoom_Int","Bed No.",Integer.class),
+    AIR_CONDITIONING("airConditioning_KJAnnexeRoom_Bool", "Air Conditioning", Boolean.class),
+    BED_INFO("bedInfo_KJAnnexeRoom_DocumentArray", "Bed Information", List.class),
+    BED_NO("bedNo_KJAnnexeRoom_Int", "Bed No.", Integer.class),
     ACTIVE_BED_STATUS("activeBedStatus_KJAnnexeRoom_Bool", "Active Bed Status", Boolean.class),
-
-    ROOM_AVAILABILITY_STATUS("roomAvailabilityStatus_KJAnnexeRoom_Bool","Active Room Status",Boolean.class),
-    // Fixed the naming from NUMBER_OF_BEDS_BOOK to NUMBER_OF_BEDS
+    IS_ACTIVE("isActive_KJAnnexeRoom_Bool", "Room Active Status", Boolean.class),
+    ROOM_AVAILABILITY_STATUS("roomAvailabilityStatus_KJAnnexeRoom_Bool", "Active Room Status", Boolean.class),
     NUMBER_OF_BEDS("numberOfBeds_KJAnnexeRoom_Int", "Number of Beds", Integer.class),
-
-    AMENITIES_INFO("amenitiesInfo_KJAnnexeRoom_DocumentArray","Amenities Information", Document.class),
-    IS_WIFI_ACTIVE("isWifiActive_KJAnnexeRoom_Bool","Is Wifi Active",Boolean.class),
-    IS_BALCONY_ACTIVE("isBalconyActive_KJAnnexeRoom_Bool","Is Balcony Active",Boolean.class),
-    IS_TV_ACTIVE("isTvActive_KJAnnexeRoom_Bool","Is TV Active",Boolean.class),
-    // Added air conditioning field
-    IS_AC_ACTIVE("isAcActive_KJAnnexeRoom_Bool","Is AC Active",Boolean.class);
+    AMENITIES_INFO("amenitiesInfo_KJAnnexeRoom_DocumentArray", "Amenities Information", List.class),
+    AMENITIES_LIST("amenitiesList_KJAnnexeRoom_TextArray", "List of Amenities", String.class), // Changed to String.class with _TextArray
+    AMENITY_NAME("amenityName_KJAnnexeRoom_Text", "Amenity Name", String.class),
+    AMENITY_STATUS("amenityStatus_KJAnnexeRoom_Bool", "Amenity Status", Boolean.class);
 
     private final String property;
     private final String label;
@@ -74,5 +68,7 @@ public enum AnnexeRoomKeysPBinder implements KJUSYSPropertyBinder {
         return this.maxLength;
     }
 
-    private static AnnexeRoomKeysPBinder[] $values() { return AnnexeRoomKeysPBinder.class.getEnumConstants(); }
+    private static AnnexeRoomKeysPBinder[] $values() {
+        return AnnexeRoomKeysPBinder.class.getEnumConstants();
+    }
 }
