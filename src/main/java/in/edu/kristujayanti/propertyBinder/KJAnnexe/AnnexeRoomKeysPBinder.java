@@ -7,7 +7,7 @@ import javax.swing.text.Document;
 
 public enum AnnexeRoomKeysPBinder implements KJUSYSPropertyBinder {
 
-    ROOM_ID("roomId_KJAnnexeRoom_Text","Room ID",ObjectId.class),
+    ROOM_ID("roomId_KJAnnexeRoom_ObjectId","Room ID",ObjectId.class),
     ROOM_NUMBER("roomNumber_KJAnnexeRoom_Text", "Room Number", String.class),
     COST_PER_BED("costPerBed_KJAnnexeRoom_Double", "Cost Per Bed", Double.class),
     COST_PER_ROOM("costPerRoom_KJAnnexeRoom_Double", "Cost Per Room", Double.class),
