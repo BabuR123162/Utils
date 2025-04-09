@@ -23,7 +23,7 @@ public enum AnnexeRoomKeysPBinder implements KJUSYSPropertyBinder {
     BED_NO("bedNo_KJAnnexeRoom_Int","Bed No.",Integer.class),
     ACTIVE_BED_STATUS("activeBedStatus_KJAnnexeRoom_Bool", "Active Bed Status", Boolean.class),
     ROOM_AVAILABILITY_STATUS("roomAvailabilityStatus_KJAnnexeRoom_Bool","Active Room Status",Boolean.class),
-    // Fixed the naming from NUMBER_OF_BEDS_BOOK to NUMBER_OF_BEDS
+    IS_ACTIVE("isActive_KJAnnexeRoom_Bool", "Room Active Status", Boolean.class),
     AIR_CONDITIONING("airConditioning_KJAnnexeRoom_Bool", "Air Conditioning", Boolean.class),
     NUMBER_OF_BEDS("numberOfBeds_KJAnnexeRoom_Int", "Number of Beds", Integer.class),
     AMENITIES_INFO("amenitiesInfo_KJAnnexeRoom_DocumentArray", "Amenities Information", List.class),
