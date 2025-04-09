@@ -5,17 +5,16 @@ import org.bson.Document;
 import org.bson.types.ObjectId;
 
 public enum AnnexeBookingKeysPBinder implements KJUSYSPropertyBinder {
-
-
-    OBJECT_ID("_id", "MongoDB ObjectID", ObjectId.class),
     BOOKING_ID("bookingId_KJAnnexeBooking_Text", "Booking ID", String.class),
+    BOOKING_OBJECT_ID("bookingObjectId_KJAnnexeBooking_ObjectId", "MongoDB ObjectID", ObjectId.class),
+    OBJECT_ID("_id", "MongoDB ObjectID", ObjectId.class),
     BOOKING_TYPE("bookingType_KJAnnexeBooking_Text", "Booking Type", String.class),
     //Guest Details
     GUEST_INFO("guestInfo_KJAnnexeBooking_DocumentArray", "Guest Information", Document.class),
     BED_NO ("bedNumber_KJAnnexeRoom_Int","Bed NO.",ObjectId.class), //if booked by bed only
     GUEST_NAME("guestName_KJAnnexeBooking_Text", "Guest Name", String.class),
     GUEST_GENDER("guestGender_KJAnnexeBooking_Text","Guest Gender",String.class),
-    GUEST_AADHAAR_NO("guestAadhaar_KJAnnexeBooking_Text","Guest Aadhaar No",String.class),
+    GUEST_AADHAAR_NO("guestAadhaarNo_KJAnnexeBooking_Text","Guest Aadhaar No",String.class),
     GUEST_PHONE_NO("guestPhoneNo_KJAnnexeBooking_Text","Guest Phone No",String.class),
     GUEST_DESIGNATION("guestDesignation_KJAnnexeBooking_Text","Guest Designation",String.class),
     GUEST_ADDRESS("guestAddress_KJAnnexeBooking_Text","Guest Address",String.class),
@@ -33,10 +32,10 @@ public enum AnnexeBookingKeysPBinder implements KJUSYSPropertyBinder {
     COLLEGE_GUEST("collegeGuest_KJAnnexeBooking_Bool", "College Guest", Boolean.class),
     //Room Details
     SELECTED_ROOM("selectedRoom_KJAnnexeBooking_DocumentArray", "Selected Room Details", Document.class),
-    SELECTED_ROOM_NO("selectedRoomNo_KJAnnexeBooking_ObjectID", "Selected Room Number", ObjectId.class),
+    SELECTED_ROOM_NO("selectedRoomNo_KJAnnexeBooking_Int", "Selected Room Number", Integer.class),
     SELECTED_ROOM_TYPE("selectedRoomType_KJAnnexeBooking_Text", "Selected Room Type", String.class),
     SELECTED_BED_NO("selectedBedNo_KJAnnexeBooking_Int","Numbers of Bed Selected",Integer.class),
-
+    IS_MAIN_GUEST("isMainGuest_KJAnnexeBooking_Bool", "Main Guest", Boolean.class),
     BOOKING_STATUS("bookingStatus_KJAnnexeBooking_Text", "Booking Status", String.class),
     PAYMENT_STATUS("paymentStatus_KJAnnexeBooking_Bool", "Payment Status", Boolean.class),
     TOTAL_AMOUNT_PAYABLE("totalAmountPayable_KJAnnexeBooking_double", "Total Amount Payable", Double.class);
