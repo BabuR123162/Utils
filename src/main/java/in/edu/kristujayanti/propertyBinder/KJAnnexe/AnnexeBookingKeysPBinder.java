@@ -41,7 +41,11 @@ public enum AnnexeBookingKeysPBinder implements KJUSYSPropertyBinder {
     IS_MAIN_GUEST("isMainGuest_KJAnnexeBooking_Bool", "Main Guest", Boolean.class),
     BOOKING_STATUS("bookingStatus_KJAnnexeBooking_Text", "Booking Status", String.class),
     PAYMENT_STATUS("paymentStatus_KJAnnexeBooking_Bool", "Payment Status", Boolean.class),
-    TOTAL_AMOUNT_PAYABLE("totalAmountPayable_KJAnnexeBooking_double", "Total Amount Payable", Double.class);
+    TOTAL_AMOUNT_PAYABLE("totalAmountPayable_KJAnnexeBooking_double", "Total Amount Payable", Double.class),
+    // New Property Binders for Check-in, Check-out, and Cancellation
+    CHECK_IN_TIME("checkInTime_KJAnnexeBooking_Date", "Check-in Time", Long.class),
+    CHECK_OUT_TIME("checkOutTime_KJAnnexeBooking_Date", "Check-out Time", Long.class),
+    CANCELLATION_TIME("cancellationTime_KJAnnexeBooking_Date", "Cancellation Time", Long.class);
 
     private final String property;
     private final String label;
@@ -65,22 +69,27 @@ public enum AnnexeBookingKeysPBinder implements KJUSYSPropertyBinder {
         this.maxLength = -1;
     }
 
+    @Override
     public String getPropertyName() {
         return this.property;
     }
 
+    @Override
     public String getDisplayName() {
         return this.label;
     }
 
+    @Override
     public Class<?> getDataType() {
         return this.dataType;
     }
 
+    @Override
     public Integer getMinLength() {
         return this.minLength;
     }
 
+    @Override
     public Integer getMaxLength() {
         return this.maxLength;
     }
