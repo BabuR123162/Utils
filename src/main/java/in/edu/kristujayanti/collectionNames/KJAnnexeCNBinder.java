@@ -3,7 +3,8 @@ package in.edu.kristujayanti.collectionNames;
 public enum KJAnnexeCNBinder implements KJUSYSCNBinder {
     KJANNEXE_ROOM_COLLECTION("KJAnnexeRooms"),
     KJANNEXE_BOOKING_COLLECTION("KJAnnexeBooking"),
-    KJANNEXE_PAYMENT_COLLECTION("KJAnnexePayment");
+    KJANNEXE_PAYMENT_COLLECTION("KJAnnexePayment"),
+    KJANNEXE_ROOM_TYPE_COLLECTION("KJAnnexeRoomTypes"); // Added new collection for room types
 
     private final String collectionName;
 
