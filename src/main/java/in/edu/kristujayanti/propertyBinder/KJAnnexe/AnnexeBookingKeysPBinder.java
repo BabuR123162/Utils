@@ -45,7 +45,8 @@ public enum AnnexeBookingKeysPBinder implements KJUSYSPropertyBinder {
     // New Property Binders for Check-in, Check-out, and Cancellation
     CHECK_IN_TIME("checkInTime_KJAnnexeBooking_Date", "Check-in Time", Long.class),
     CHECK_OUT_TIME("checkOutTime_KJAnnexeBooking_Date", "Check-out Time", Long.class),
-    CANCELLATION_TIME("cancellationTime_KJAnnexeBooking_Date", "Cancellation Time", Long.class);
+    CANCELLATION_TIME("cancellationTime_KJAnnexeBooking_Date", "Cancellation Time", Long.class),
+    REMARKS("remarks_KJAnnexeBooking_Text", "Remarks", String.class);
 
     private final String property;
     private final String label;
