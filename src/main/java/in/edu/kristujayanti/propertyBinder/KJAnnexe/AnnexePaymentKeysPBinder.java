@@ -8,6 +8,7 @@ public enum AnnexePaymentKeysPBinder implements KJUSYSPropertyBinder {
     BOOKING_ID("bookingId_KJAnnexeBooking_Text", "Booking ID", String.class),
     BILL_REF_NUMBER("billRefNumber_KJAnnexePayment_Text", "Bill Reference Number", String.class),
     ACCOMMODATION_CHARGES("accommodationCharges_KJAnnexePayment_Double", "Accommodation Charges", Double.class),
+    TOTAL_ACCOMMODATION_CHARGES("total_accommodationCharges_KJAnnexePayment_Double", "Total Accommodation Charges", Double.class),
     PAYMENT_METHOD("paymentMethod_KJAnnexePayment_Text", "Payment Method", String.class),
     DISCOUNT_AMOUNT("discountAmount_KJAnnexePayment_Double", "Discount Amount", Double.class),
 //  PAYMENT_STATUS("paymentStatus_KJAnnexePayment_Text", "Payment Status", String.class),
