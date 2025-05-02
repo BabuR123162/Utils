@@ -41,6 +41,7 @@ public enum AnnexeBookingKeysPBinder implements KJUSYSPropertyBinder {
     IS_MAIN_GUEST("isMainGuest_KJAnnexeBooking_Bool", "Main Guest", Boolean.class),
     BOOKING_STATUS("bookingStatus_KJAnnexeBooking_Text", "Booking Status", String.class),
     PAYMENT_STATUS("paymentStatus_KJAnnexeBooking_Bool", "Payment Status", Boolean.class),
+    PAID_STATUS("paIDStatus_KJAnnexeBooking_Bool", "PaID Status", Boolean.class),
     TOTAL_AMOUNT_PAYABLE("totalAmountPayable_KJAnnexeBooking_double", "Total Amount Payable", Double.class),
     // New Property Binders for Check-in, Check-out, and Cancellation
     CHECK_IN_TIME("checkInTime_KJAnnexeBooking_Date", "Check-in Time", Long.class),
