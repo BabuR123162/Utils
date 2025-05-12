@@ -14,6 +14,7 @@ public enum AnnexePaymentKeysPBinder implements KJUSYSPropertyBinder {
 //  PAYMENT_STATUS("paymentStatus_KJAnnexePayment_Text", "Payment Status", String.class),
     AMOUNT_PAID("amountPaid_KJAnnexePayment_Double", "Amount Paid", Double.class),
     PAYMENT_DATE("paymentDate_KJAnnexePayment_Date", "Payment Date", Long.class),
+    PAID_AMOUNT("paidAmount_KJAnnexePayment_Double", "Paid Amount", Double.class),
     BALANCE_DUE_AMOUNT("balanceDueAmount_KJAnnexePayment_Double", "Balance Due Amount", Double.class);
 
     private final String property;
