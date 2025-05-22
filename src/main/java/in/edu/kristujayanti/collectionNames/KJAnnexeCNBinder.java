@@ -4,8 +4,8 @@ public enum KJAnnexeCNBinder implements KJUSYSCNBinder {
     KJANNEXE_ROOM_COLLECTION("KJAnnexeRooms"),
     KJANNEXE_BOOKING_COLLECTION("KJAnnexeBooking"),
     KJANNEXE_PAYMENT_COLLECTION("KJAnnexePayment"),
-    KJANNEXE_ROOM_TYPE_COLLECTION("KJAnnexeRoomTypes"); // Added new collection for room types
-
+    KJANNEXE_ROOM_TYPE_COLLECTION("KJAnnexeRoomTypes"),
+    KJANNEXE_PROPERTY_COLLECTION("KJAnnexeProperties");
     private final String collectionName;
 
     private KJAnnexeCNBinder(String collectionName) {

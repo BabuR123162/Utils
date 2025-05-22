@@ -29,7 +29,8 @@ public enum AnnexeRoomKeysPBinder implements KJUSYSPropertyBinder {
     AMENITIES_INFO("amenitiesInfo_KJAnnexeRoom_DocumentArray", "Amenities Information", List.class),
     AMENITIES_LIST("amenitiesList_KJAnnexeRoom_TextArray", "List of Amenities", String.class), // Changed to String.class with _TextArray
     AMENITY_NAME("amenityName_KJAnnexeRoom_Text", "Amenity Name", String.class),
-    AMENITY_STATUS("amenityStatus_KJAnnexeRoom_Bool", "Amenity Status", Boolean.class);
+    AMENITY_STATUS("amenityStatus_KJAnnexeRoom_Bool", "Amenity Status", Boolean.class),
+    COLLEGE_PROPERTY("collegeProperty_KJAnnexeRoom_Text", "College Property", String.class);
 
     private final String property;
     private final String label;
