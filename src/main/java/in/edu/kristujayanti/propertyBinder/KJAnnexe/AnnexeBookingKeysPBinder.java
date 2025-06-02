@@ -49,6 +49,7 @@ public enum AnnexeBookingKeysPBinder implements KJUSYSPropertyBinder {
     CANCELLATION_TIME("cancellationTime_KJAnnexeBooking_DateTime", "Cancellation Time", Long.class);
 
 
+
     private final String property;
     private final String label;
     private final Class<?> dataType;

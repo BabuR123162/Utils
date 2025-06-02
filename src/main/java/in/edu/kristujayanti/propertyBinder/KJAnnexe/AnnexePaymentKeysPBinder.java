@@ -18,7 +18,7 @@ public enum AnnexePaymentKeysPBinder implements KJUSYSPropertyBinder {
     PAID_AMOUNT("paidAmount_KJAnnexePayment_Double", "Paid Amount", Double.class),
     BALANCE_DUE_AMOUNT("balanceDueAmount_KJAnnexePayment_Double", "Balance Due Amount", Double.class),
     GST_AMOUNT("gstAmount_KJAnnexePayment_Double","Gst Amount",Double.class),
-    IS_GST_INCLUDED("isGSTIncluded_KJAnnexePayment_Bool", "Is GST Included",Boolean.class);
+    IS_GST_INCLUDED("isGstIncluded_KJAnnexePayment_Bool", "Is GST Included",Boolean.class);
 
     private final String property;
     private final String label;
