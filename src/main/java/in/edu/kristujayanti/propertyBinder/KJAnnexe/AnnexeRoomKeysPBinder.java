@@ -17,7 +17,9 @@ public enum AnnexeRoomKeysPBinder implements KJUSYSPropertyBinder {
     MAX_PEOPLE("maxPeople_KJAnnexeRoom_Int", "Max People", Integer.class),
     PHOTO_URL("photoUrl_KJAnnexeRoom_Text", "Photo URL", String.class),
     ROOMS_LIST("roomsList_KJAnnexeRoom_DocumentArray","List of rooms", Document.class),
-
+    ROOMS_PAY_LIST("roomsPayList_KJAnnexeRoom_TextArray","list of to be payed Rooms",String.class),
+    ROOM_NAMES_LIST("roomNamesList_KJAnnexeRoom_Text","Name list of selected rooms", String.class),
+    BOOKING_REFERENCE_ID("bookingReferenceId_KJAnnexeBooking_Text","Booking Reference ID", String.class),
     BED_INFO("bedInfo_KJAnnexeRoom_DocumentArray","Bed Information", Document.class),
     BED_ID("bedId_KJAnnexeRoom_ObjectId","Bed ID", ObjectId.class),
     BED_NO("bedNo_KJAnnexeRoom_Int","Bed No.",Integer.class),
