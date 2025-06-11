@@ -17,6 +17,7 @@ public enum AnnexeBookingKeysPBinder implements KJUSYSPropertyBinder {
     GUEST_GENDER("guestGender_KJAnnexeBooking_Text", "Guest Gender", String.class),
     GUEST_AADHAAR_NO("guestAadhaarNo_KJAnnexeBooking_Text", "Guest Aadhaar No", String.class),
     GUEST_PHONE_NO("guestPhoneNo_KJAnnexeBooking_Text", "Guest Phone No", String.class),
+    GUEST_COUNTRY_CODE("guestCountryCode_KJAnnexeBooking_Text", "Guest Country Code", String.class),
     GUEST_DESIGNATION("guestDesignation_KJAnnexeBooking_Text", "Guest Designation", String.class),
     GUEST_ADDRESS("guestAddress_KJAnnexeBooking_Text", "Guest Address", String.class),
     GUEST_EMAIL_ID("guestEmailId_KJAnnexeBooking_Text", "Guest Email", String.class),
