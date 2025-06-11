@@ -9,6 +9,7 @@ public enum AnnexeBookingKeysPBinder implements KJUSYSPropertyBinder {
     BOOKING_OBJECT_ID("bookingObjectId_KJAnnexeBooking_ObjectId", "MongoDB ObjectID", ObjectId.class),
     OBJECT_ID("_id", "MongoDB ObjectID", ObjectId.class),
     BOOKING_TYPE("bookingType_KJAnnexeBooking_Text", "Booking Type", String.class),
+    BOOKING_REFERENCE_ID("bookingReferenceId_KJAnnexeBooking_Text", "Booking Reference ID", String.class),
     // Guest Details
     GUEST_INFO("guestInfo_KJAnnexeBooking_DocumentArray", "Guest Information", Document.class),
     BED_NO("bedNumber_KJAnnexeRoom_Int", "Bed NO.", Integer.class),
